@@ -179,6 +179,14 @@ a:hover, a:active, a:focus {
   float: left;
   width: 200px;
 }
+.l-contents .l-breadcrumb {
+  padding: 0 0 15px;
+  color: #333333;
+  font-size: 14px;
+}
+.l-contents .l-breadcrumb a {
+  color: #004986;
+}
 
 /*==============================
 サイドバー
@@ -413,4 +421,34 @@ a:hover, a:active, a:focus {
 }
 .l-main-foot .foot-list li {
   margin: 0 30px 0 0;
+}
+
+/*==============================
+牛嶋塗装工業様_02他店との違い
+==============================*/
+.l-main-page-different h2 {
+  padding: 0 0 30px;
+}
+.l-main-page-different h4 {
+  padding: 0 0 20px;
+}
+.l-main-page-different .box {
+  padding: 20px 0 30px;
+  line-height: 22px;
+  font-size: 14px;
+  font-color: #434343;
+}
+.l-main-page-different .box .box-thumb {
+  width: 252px;
+  float: left;
+}
+.l-main-page-different .box .box-thumb p.caption {
+  padding: 0 0 0 40px;
+}
+.l-main-page-different .box .box-text {
+  float: left;
+  width: 527px;
+}
+.l-main-page-different .box:last-child {
+  padding: 20px 0 260px;
 }

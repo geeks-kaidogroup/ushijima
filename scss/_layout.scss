@@ -113,6 +113,14 @@
 		float:left;
 		width:200px;
 	}
+    .l-breadcrumb{
+        padding: 0 0 15px;
+        color: #333333;
+        font-size: 14px;
+        a{
+            color: #004986;
+        }
+    }
 }
 
 // ============================
@@ -365,4 +373,38 @@
 			margin:0 30px 0 0;
 		}
 	}
+}
+
+/*==============================
+牛嶋塗装工業様_02他店との違い
+==============================*/
+.l-main-page-different{
+    h2{
+        padding: 0 0 30px;
+    }
+    h4{
+        padding: 0 0 20px;
+    }
+    .box {
+        padding: 20px 0 30px;
+        line-height: 22px;
+        font: {
+            size: 14px;
+            color: #434343;
+        }
+        .box-thumb{
+            width: 252px;
+            float: left;
+            p.caption{
+                padding: 0 0 0 40px;
+            }
+        }
+        .box-text{
+            float: left;
+            width: 527px;
+        }
+        &:last-child{
+            padding: 20px 0 260px;
+        }
+    }
 }
