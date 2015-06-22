@@ -57,10 +57,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* General */
-.float-list, .wrap, .l-contents, .infobox, .l-cast, .cf {
+.float-list, .wrap, .l-contents, .infobox, .l-cast, .flow-wrapper .flowbox, .cf {
   *zoom: 1;
 }
-.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .cf:after {
+.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .flow-wrapper .flowbox:after, .cf:after {
   content: "";
   display: block;
   clear: both;
@@ -499,4 +499,20 @@ h4 {
 }
 .l-cast .cast-info .cast-info-table td {
   padding: 15px 4px 11px 10px;
+}
+
+/*牛嶋塗装工業様_04施工の流れ*/
+.flow-wrapper p {
+  line-height: 22px;
+  font-size: 14px;
+  font-color: #434343;
+}
+.flow-wrapper .flowbox .flowbox-thumb {
+  width: 345px;
+  float: left;
+}
+.flow-wrapper .flowbox .flowbox-text {
+  float: left;
+  width: 410px;
+  padding: 0 0 0 20px;
 }

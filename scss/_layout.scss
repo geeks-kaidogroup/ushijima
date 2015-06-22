@@ -454,3 +454,26 @@ h4{
         }
     } 
 
+/*牛嶋塗装工業様_04施工の流れ*/
+
+.flow-wrapper{
+    p{
+        line-height: 22px;
+        font: {
+            size:14px;
+            color: #434343;
+        }
+    }
+    .flowbox{
+        @extend %extend-cf;
+        .flowbox-thumb{
+            width: 345px;
+            float: left;
+        }
+        .flowbox-text{
+            float: left;
+            width: 410px;
+            padding: 0 0 0 20px;
+        }
+    }
+}
