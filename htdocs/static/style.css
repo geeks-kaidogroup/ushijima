@@ -57,10 +57,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* General */
-.float-list, .wrap, .l-contents, .cf {
+.float-list, .wrap, .l-contents, .infobox, .l-cast, .cf {
   *zoom: 1;
 }
-.float-list:after, .wrap:after, .l-contents:after, .cf:after {
+.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .cf:after {
   content: "";
   display: block;
   clear: both;
@@ -111,6 +111,10 @@ a:hover, a:active, a:focus {
 
 h2 {
   padding: 0 0 30px;
+}
+
+h3 {
+  padding: 0 0 15px;
 }
 
 h4 {
@@ -437,25 +441,25 @@ h4 {
 /*==============================
 牛嶋塗装工業様_02他店との違い
 ==============================*/
-.l-main-page-different .box {
-  padding: 20px 0 30px;
+.infobox {
+  padding: 0 0 30px;
   line-height: 22px;
   font-size: 14px;
   font-color: #434343;
 }
-.l-main-page-different .box .box-thumb {
+.infobox .infobox-thumb {
   width: 252px;
   float: left;
 }
-.l-main-page-different .box .box-thumb p.caption {
+.infobox .infobox-thumb p.caption {
   padding: 0 0 0 40px;
 }
-.l-main-page-different .box .box-text {
+.infobox .infobox-text {
   float: left;
   width: 527px;
 }
-.l-main-page-different .box:last-child {
-  padding: 20px 0 260px;
+.infobox:last-child {
+  padding: 0 0 260px;
 }
 
 /*==============================

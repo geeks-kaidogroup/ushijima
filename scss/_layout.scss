@@ -35,6 +35,9 @@
 h2{
     padding: 0 0 30px;
 }
+h3{
+    padding: 0 0 15px;
+}
 h4{
     padding: 0 0 20px;
 }
@@ -386,36 +389,36 @@ h4{
 /*==============================
 牛嶋塗装工業様_02他店との違い
 ==============================*/
-.l-main-page-different{
-    .box {
-        padding: 20px 0 30px;
+    .infobox {
+        padding: 0 0 30px;
         line-height: 22px;
+        @extend %extend-cf;
         font: {
             size: 14px;
             color: #434343;
         }
-        .box-thumb{
+        .infobox-thumb{
             width: 252px;
             float: left;
             p.caption{
                 padding: 0 0 0 40px;
             }
         }
-        .box-text{
+        .infobox-text{
             float: left;
             width: 527px;
         }
         &:last-child{
-            padding: 20px 0 260px;
+            padding: 0 0 260px;
         }
     }
-}
 
 /*==============================
 牛嶋塗装工業様_03職人紹介
 ==============================*/
 
     .l-cast{
+        @extend %extend-cf;
         padding: 0 0 30px;
         &:last-child{
             padding: 0 0 75px;
