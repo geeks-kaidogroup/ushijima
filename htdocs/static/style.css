@@ -461,23 +461,23 @@ h4 {
 /*==============================
 牛嶋塗装工業様_03職人紹介
 ==============================*/
-.l-main-page-introduce .l-cast {
+.l-cast {
   padding: 0 0 30px;
 }
-.l-main-page-introduce .l-cast:last-child {
+.l-cast:last-child {
   padding: 0 0 75px;
 }
-.l-main-page-introduce .l-cast .cast-info {
+.l-cast .cast-info {
   padding: 15px 0 0;
 }
-.l-main-page-introduce .l-cast .cast-info .cast-info-thumb {
+.l-cast .cast-info .cast-info-thumb {
   width: 220px;
   float: left;
 }
-.l-main-page-introduce .l-cast .cast-info .cast-info-thumb li {
+.l-cast .cast-info .cast-info-thumb li {
   padding: 0 0 20px;
 }
-.l-main-page-introduce .l-cast .cast-info .cast-info-table {
+.l-cast .cast-info .cast-info-table {
   float: left;
   width: 560px;
   font-size: 18px;
@@ -485,14 +485,14 @@ h4 {
   line-height: 22px;
   letter-spacing: -1.3px;
 }
-.l-main-page-introduce .l-cast .cast-info .cast-info-table table, .l-main-page-introduce .l-cast .cast-info .cast-info-table th, .l-main-page-introduce .l-cast .cast-info .cast-info-table td {
+.l-cast .cast-info .cast-info-table table, .l-cast .cast-info .cast-info-table th, .l-cast .cast-info .cast-info-table td {
   border: 1px solid #352920;
 }
-.l-main-page-introduce .l-cast .cast-info .cast-info-table th {
+.l-cast .cast-info .cast-info-table th {
   width: 208px;
   text-align: center;
   padding: 15px 0;
 }
-.l-main-page-introduce .l-cast .cast-info .cast-info-table td {
+.l-cast .cast-info .cast-info-table td {
   padding: 15px 4px 11px 10px;
 }
