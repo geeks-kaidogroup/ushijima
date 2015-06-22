@@ -31,6 +31,13 @@
 		color:#fff;
 	}
 }
+
+h2{
+    padding: 0 0 30px;
+}
+h4{
+    padding: 0 0 20px;
+}
 // ============================
 // l-header
 // ============================
@@ -361,6 +368,7 @@
 	}
 }
 .l-main-foot {
+    padding: 0 0 65px;
 	.foot-banner {
 		display:table;
 		margin:0 auto;
@@ -379,12 +387,6 @@
 牛嶋塗装工業様_02他店との違い
 ==============================*/
 .l-main-page-different{
-    h2{
-        padding: 0 0 30px;
-    }
-    h4{
-        padding: 0 0 20px;
-    }
     .box {
         padding: 20px 0 30px;
         line-height: 22px;
@@ -408,3 +410,45 @@
         }
     }
 }
+
+/*==============================
+牛嶋塗装工業様_03職人紹介
+==============================*/
+.l-main-page-introduce{
+    .l-cast{
+        padding: 0 0 30px;
+        &:last-child{
+            padding: 0 0 75px;
+        }
+        .cast-info{
+            padding: 15px 0 0;
+            .cast-info-thumb{
+                width: 220px;   
+                float: left;
+                li{
+                    padding: 0 0 20px;
+                }
+            }
+            .cast-info-table{
+                float: left;
+                width: 560px;
+                font-size: 18px;
+                color: #333333;
+                line-height: 22px;
+                letter-spacing: -1.3px;
+                table,th,td{
+                    border: 1px solid #352920;
+                }
+                th{
+                    width: 208px;
+                    text-align: center;
+                    padding: 15px 0;
+                }
+                td{
+                    padding: 15px 4px 11px 10px;
+                }
+            }
+        }
+    }    
+}
+

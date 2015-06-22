@@ -109,6 +109,14 @@ a:hover, a:active, a:focus {
   color: #fff;
 }
 
+h2 {
+  padding: 0 0 30px;
+}
+
+h4 {
+  padding: 0 0 20px;
+}
+
 /*==============================
 ヘッダー
 ==============================*/
@@ -410,6 +418,9 @@ a:hover, a:active, a:focus {
   margin: 0 auto;
 }
 
+.l-main-foot {
+  padding: 0 0 65px;
+}
 .l-main-foot .foot-banner {
   display: table;
   margin: 0 auto;
@@ -426,12 +437,6 @@ a:hover, a:active, a:focus {
 /*==============================
 牛嶋塗装工業様_02他店との違い
 ==============================*/
-.l-main-page-different h2 {
-  padding: 0 0 30px;
-}
-.l-main-page-different h4 {
-  padding: 0 0 20px;
-}
 .l-main-page-different .box {
   padding: 20px 0 30px;
   line-height: 22px;
@@ -451,4 +456,43 @@ a:hover, a:active, a:focus {
 }
 .l-main-page-different .box:last-child {
   padding: 20px 0 260px;
+}
+
+/*==============================
+牛嶋塗装工業様_03職人紹介
+==============================*/
+.l-main-page-introduce .l-cast {
+  padding: 0 0 30px;
+}
+.l-main-page-introduce .l-cast:last-child {
+  padding: 0 0 75px;
+}
+.l-main-page-introduce .l-cast .cast-info {
+  padding: 15px 0 0;
+}
+.l-main-page-introduce .l-cast .cast-info .cast-info-thumb {
+  width: 220px;
+  float: left;
+}
+.l-main-page-introduce .l-cast .cast-info .cast-info-thumb li {
+  padding: 0 0 20px;
+}
+.l-main-page-introduce .l-cast .cast-info .cast-info-table {
+  float: left;
+  width: 560px;
+  font-size: 18px;
+  color: #333333;
+  line-height: 22px;
+  letter-spacing: -1.3px;
+}
+.l-main-page-introduce .l-cast .cast-info .cast-info-table table, .l-main-page-introduce .l-cast .cast-info .cast-info-table th, .l-main-page-introduce .l-cast .cast-info .cast-info-table td {
+  border: 1px solid #352920;
+}
+.l-main-page-introduce .l-cast .cast-info .cast-info-table th {
+  width: 208px;
+  text-align: center;
+  padding: 15px 0;
+}
+.l-main-page-introduce .l-cast .cast-info .cast-info-table td {
+  padding: 15px 4px 11px 10px;
 }
