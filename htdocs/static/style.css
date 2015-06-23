@@ -57,10 +57,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* General */
-.float-list, .wrap, .l-contents, .infobox, .l-cast, .flowbox, .l-voice-detail .voicebox, .l-media-list .mediabox, .l-media-list .mediabox:last-child, .blogbox, .cf {
+.float-list, .wrap, .l-contents, .infobox, .l-cast, .flowbox, .l-voice-detail .voicebox, .l-media-list .mediabox, .l-media-list .mediabox:last-child, .blogbox, .l-blog-detail .l-page-nav, .cf {
   *zoom: 1;
 }
-.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .flowbox:after, .l-voice-detail .voicebox:after, .l-media-list .mediabox:after, .l-media-list .mediabox:last-child:after, .blogbox:after, .cf:after {
+.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .flowbox:after, .l-voice-detail .voicebox:after, .l-media-list .mediabox:after, .l-media-list .mediabox:last-child:after, .blogbox:after, .l-blog-detail .l-page-nav:after, .cf:after {
   content: "";
   display: block;
   clear: both;
@@ -115,6 +115,14 @@ h2 {
 
 h3 {
   padding: 0 0 15px;
+}
+h3.blog-ttl {
+  background: #000;
+  color: #fff;
+  padding: 7px 0 7px 20px;
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 h4 {
@@ -695,14 +703,6 @@ p {
 .blogbox {
   padding: 0 0 35px;
 }
-.blogbox h3 {
-  background: #000;
-  color: #fff;
-  padding: 7px 0 7px 20px;
-  margin: 0 0 20px;
-  font-size: 16px;
-  font-weight: bold;
-}
 .blogbox .blog-thumb {
   float: left;
   width: 140px;
@@ -731,4 +731,44 @@ p {
 .pagination-center {
   text-align: center;
   padding: 26px 0 100px;
+}
+
+/*牛嶋塗装工業様_09専門家コラム個別記事*/
+.l-blog-detail .date {
+  border-bottom: 2px solid #b5b5b5;
+  margin: 0 0 7px;
+  padding: 0 0 10px;
+  font-weight: bold;
+  color: #333333;
+  font-size: 18px;
+}
+.l-blog-detail .blog-detail-box {
+  padding: 8px 0 0;
+  line-height: 26px;
+}
+.l-blog-detail .blog-detail-box .detail-box-text {
+  width: 520px;
+  padding: 0 20px 0 0;
+  float: left;
+}
+.l-blog-detail .blog-detail-box .detail-box-thumb {
+  float: right;
+}
+.l-blog-detail .l-page-nav {
+  padding: 55px 0 390px;
+  text-align: center;
+}
+.l-blog-detail .l-page-nav li {
+  display: inline-block;
+  padding: 0 85px 0 0;
+}
+.l-blog-detail .l-page-nav li:first-child {
+  color: #626262;
+}
+.l-blog-detail .l-page-nav li:last-child {
+  padding: 0;
+}
+.l-blog-detail .l-page-nav li a {
+  font-weight: bold;
+  color: #004986;
 }

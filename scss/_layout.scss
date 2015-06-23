@@ -37,6 +37,16 @@ h2{
 }
 h3{
     padding: 0 0 15px;
+    &.blog-ttl{
+        background: #000;
+        color: #fff;
+        padding: 7px 0 7px 20px;
+        margin: 0 0 20px;
+        font: {
+            size: 16px;
+            weight: bold;
+        }
+    }
 }
 h4{
     padding: 0 0 20px;
@@ -45,6 +55,8 @@ p{
     color: #727272;
     font-size: 14px;
 }
+
+
 // ============================
 // l-header
 // ============================
@@ -661,16 +673,6 @@ p{
 .blogbox{
     @extend %extend-cf;
     padding: 0 0 35px;
-    h3{
-        background: #000;
-        color: #fff;
-        padding: 7px 0 7px 20px;
-        margin: 0 0 20px;
-        font: {
-            size: 16px;
-            weight: bold;
-        }
-    }
     .blog-thumb{
         float: left;
         width: 140px;
@@ -699,4 +701,48 @@ p{
 .pagination-center{
     text-align: center;
     padding: 26px 0 100px;
+}
+
+/*牛嶋塗装工業様_09専門家コラム個別記事*/
+.l-blog-detail{
+    .date{
+        border-bottom: 2px solid #b5b5b5;
+        margin: 0 0 7px;
+        padding: 0 0 10px;
+        font-weight: bold;
+        color: #333333;
+        font-size: 18px;
+
+    }
+    .blog-detail-box{
+        padding: 8px 0 0;
+        line-height: 26px;
+        .detail-box-text{
+            width: 520px;
+            padding: 0 20px 0 0;
+            float: left;
+        }
+        .detail-box-thumb{
+            float: right;
+        }
+    }
+    .l-page-nav{
+        @extend %extend-cf;
+        padding: 55px 0 390px;
+        text-align: center;
+        li{
+            display: inline-block;
+            padding: 0 85px 0 0;
+            &:first-child{
+                color: #626262;
+            }
+            &:last-child{
+                padding: 0;
+            }
+            a{
+                font-weight: bold;
+                color: #004986;
+            }
+        }
+    }
 }
