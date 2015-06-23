@@ -121,6 +121,11 @@ h4 {
   padding: 0 0 20px;
 }
 
+p {
+  color: #727272;
+  font-size: 14px;
+}
+
 /*==============================
 ヘッダー
 ==============================*/
@@ -655,4 +660,33 @@ h4 {
 }
 .l-media-list .mediabox .media-title {
   padding: 20px 0 0;
+}
+
+/*牛嶋塗装工業様_08牛嶋塗装工業の保証*/
+.l-warrantybox {
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  padding: 0 0 35px;
+}
+.l-warrantybox .warrantybox-text {
+  width: 535px;
+  float: left;
+}
+.l-warrantybox .warrantybox-thumb {
+  float: right;
+}
+
+.warranty-contents {
+  line-height: 20px;
+  font-size: 14px;
+  color: #434343;
+}
+.warranty-contents dt {
+  padding: 0 0 0 23px;
+}
+.warranty-contents dd {
+  padding: 15px 0 38px 100px;
+}
+.warranty-contents dd:last-child {
+  padding: 15px 0 90px 100px;
 }
