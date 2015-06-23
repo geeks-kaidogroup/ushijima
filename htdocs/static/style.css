@@ -347,47 +347,47 @@ h4 {
   line-height: 1;
 }
 
-.l-top-voice {
+.l-top-voice, .l-voice {
   padding: 0 0 80px 0;
 }
-.l-top-voice .voice-list {
+.l-top-voice .voice-list, .l-voice .voice-list {
   width: 810px;
 }
-.l-top-voice .voice-list li {
+.l-top-voice .voice-list li, .l-voice .voice-list li {
   margin: 0 30px 30px 0;
   width: 240px;
 }
-.l-top-voice .voice-list li .voice-head {
+.l-top-voice .voice-list li .voice-head, .l-voice .voice-list li .voice-head {
   padding: 10px 0;
   margin: 0 0 10px 0;
   font-size: 14px;
   text-align: center;
   border: 1px solid #c7c7c7;
 }
-.l-top-voice .voice-list li .voice-photo img {
+.l-top-voice .voice-list li .voice-photo img, .l-voice .voice-list li .voice-photo img {
   display: block;
   line-height: 1;
 }
-.l-top-voice .voice-list li .voice-detail {
+.l-top-voice .voice-list li .voice-detail, .l-voice .voice-list li .voice-detail {
   padding: 10px;
   background: #f0f0f0;
   border-left: 1px solid #c7c7c7;
   border-right: 1px solid #c7c7c7;
   border-bottom: 1px solid #c7c7c7;
 }
-.l-top-voice .voice-list li .voice-detail .text {
+.l-top-voice .voice-list li .voice-detail .text, .l-voice .voice-list li .voice-detail .text {
   margin: 0 0 10px 0;
   font-size: 14px;
   line-height: 20px;
 }
-.l-top-voice .voice-list li .voice-detail .condition {
+.l-top-voice .voice-list li .voice-detail .condition, .l-voice .voice-list li .voice-detail .condition {
   margin: 0 0 5px 0;
   font-size: 12px;
 }
-.l-top-voice .voice-list li .voice-detail .name {
+.l-top-voice .voice-list li .voice-detail .name, .l-voice .voice-list li .voice-detail .name {
   font-size: 12px;
 }
-.l-top-voice .top-voice-btn {
+.l-top-voice .top-voice-btn, .l-voice .top-voice-btn {
   display: table;
   margin: 0 auto;
 }
@@ -529,4 +529,24 @@ h4 {
   float: left;
   width: 410px;
   padding: 0 0 0 20px;
+}
+
+/*牛嶋塗装工業様_05お客様が語る牛嶋_一覧 (voice)*/
+.l-voice {
+  padding: 20px 0 95px;
+}
+
+.pagination {
+  text-align: right;
+  padding: 0 0 25px;
+}
+.pagination li {
+  display: inline;
+  padding: 0 0 0 10px;
+}
+.pagination li a {
+  color: #004986;
+}
+.pagination li:last-child a {
+  text-decoration: none;
 }

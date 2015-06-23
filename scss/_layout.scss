@@ -293,7 +293,7 @@ h4{
 		line-height:1;
 	}
 }
-.l-top-voice {
+.l-top-voice, .l-voice {
 	padding:0 0 80px 0;
 	.voice-list {
 		width:810px;
@@ -487,3 +487,22 @@ h4{
             padding: 0 0 0 20px;
         }
     }
+
+/*牛嶋塗装工業様_05お客様が語る牛嶋_一覧 (voice)*/
+.l-voice{
+    padding: 20px 0 95px;
+}
+.pagination{
+    text-align: right;
+    padding: 0 0 25px;
+    li{
+        display: inline;
+        padding: 0 0 0 10px;
+        a{
+            color: #004986;
+        }
+        &:last-child a{
+            text-decoration: none;
+        }
+    }
+}
