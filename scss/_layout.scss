@@ -339,7 +339,7 @@ h4{
 		margin:0 auto;
 	}
 }
-.l-top-works {
+.l-top-works, .l-works {
 	padding:0 0 80px 0;
 	.works-list {
 		width:810px;
@@ -509,10 +509,12 @@ h4{
 
 /*牛嶋塗装工業様_05お客様が語る牛嶋_詳細*/
 .l-voice-detail{
-    p{
-        color: #727272;
-        font-size: 14px;
-        padding: 15px 0 0;
+    .headline{
+        p{
+            color: #727272;
+            font-size: 14px;
+            padding: 15px 0 0;
+        }
     }
     .voicebox{
         @extend %extend-cf;
@@ -528,6 +530,7 @@ h4{
                 font-weight: bold;
                 font-size: 26px;
                 padding: 0;
+                color: #727272;
                 border-bottom: 1px solid #404646;
                 span{
                     display: block;

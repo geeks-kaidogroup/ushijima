@@ -392,32 +392,32 @@ h4 {
   margin: 0 auto;
 }
 
-.l-top-works {
+.l-top-works, .l-works {
   padding: 0 0 80px 0;
 }
-.l-top-works .works-list {
+.l-top-works .works-list, .l-works .works-list {
   width: 810px;
 }
-.l-top-works .works-list li {
+.l-top-works .works-list li, .l-works .works-list li {
   margin: 0 30px 30px 0;
 }
-.l-top-works .works-list li .works-head {
+.l-top-works .works-list li .works-head, .l-works .works-list li .works-head {
   padding: 5px 0;
   text-align: center;
   font-weight: bold;
   border: 3px solid #f0f0f0;
 }
-.l-top-works .works-list li .works-photo img {
+.l-top-works .works-list li .works-photo img, .l-works .works-list li .works-photo img {
   display: block;
   line-height: 1;
 }
-.l-top-works .works-list li .works-detail {
+.l-top-works .works-list li .works-detail, .l-works .works-list li .works-detail {
   padding: 10px;
   background: #f0f0f0;
   font-size: 14px;
   line-height: 18px;
 }
-.l-top-works .top-works-btn {
+.l-top-works .top-works-btn, .l-works .top-works-btn {
   display: table;
   margin: 0 auto;
 }
@@ -552,7 +552,7 @@ h4 {
 }
 
 /*牛嶋塗装工業様_05お客様が語る牛嶋_詳細*/
-.l-voice-detail p {
+.l-voice-detail .headline p {
   color: #727272;
   font-size: 14px;
   padding: 15px 0 0;
@@ -572,6 +572,7 @@ h4 {
   font-weight: bold;
   font-size: 26px;
   padding: 0;
+  color: #727272;
   border-bottom: 1px solid #404646;
 }
 .l-voice-detail .voicebox .voicebox-text p span {
