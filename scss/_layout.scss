@@ -554,3 +554,34 @@ h4{
         padding: 0 0 60px;
     }
 }
+
+/*牛嶋塗装工業様_06ご近所の施工宅_詳細*/
+.l-works-detail{
+    padding: 0 0 245px;
+    dt{
+        padding: 16px 0 5px;
+        &:first-child{
+           padding: 10px 0 5px;
+        }
+    }
+    dd{
+        border-bottom: 1px solid #7f7f7f;
+        padding: 0 0 5px;
+        font-size: 15px;
+        &:nth-child(-n+8){
+            margin: 0 79px 0 0;
+        }
+    }
+    .headline{
+        padding: 15px 0 0;
+    }
+    .before-thumb{
+        float: left;
+        width: 430px;
+        padding: 0 10px 0 0;
+        background: #fff;
+    }
+    .before-text{
+        padding: 0 0 32px;
+    }
+}

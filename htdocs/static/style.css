@@ -593,3 +593,34 @@ h4 {
 .l-voice-detail .photo-mix {
   padding: 0 0 60px;
 }
+
+/*牛嶋塗装工業様_06ご近所の施工宅_詳細*/
+.l-works-detail {
+  padding: 0 0 245px;
+}
+.l-works-detail dt {
+  padding: 16px 0 5px;
+}
+.l-works-detail dt:first-child {
+  padding: 10px 0 5px;
+}
+.l-works-detail dd {
+  border-bottom: 1px solid #7f7f7f;
+  padding: 0 0 5px;
+  font-size: 15px;
+}
+.l-works-detail dd:nth-child(-n+8) {
+  margin: 0 79px 0 0;
+}
+.l-works-detail .headline {
+  padding: 15px 0 0;
+}
+.l-works-detail .before-thumb {
+  float: left;
+  width: 430px;
+  padding: 0 10px 0 0;
+  background: #fff;
+}
+.l-works-detail .before-text {
+  padding: 0 0 32px;
+}
