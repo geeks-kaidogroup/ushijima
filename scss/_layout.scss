@@ -679,10 +679,11 @@ p{
     .blog-text{
         width: 620px;
         float: right;
+        line-height: 20px;
         .date{
             border-bottom: 2px solid #b5b5b5;
-            margin: 0 0 10px;
-            padding: 0 0 8px;
+            margin: 0 0 7px;
+            padding: 0 0 3px;
         }
         .read-more{
             text-align: right;
