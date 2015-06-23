@@ -506,3 +506,48 @@ h4{
         }
     }
 }
+
+/*牛嶋塗装工業様_05お客様が語る牛嶋_詳細*/
+.l-voice-detail{
+    p{
+        color: #727272;
+        font-size: 14px;
+        padding: 15px 0 0;
+    }
+    .voicebox{
+        @extend %extend-cf;
+        padding: 25px 0 35px;
+        .voicebox-thumb{
+            float: left;
+            width: 400px;
+        }
+        .voicebox-text{
+            float: left;
+            width: 380px;
+            p{
+                font-weight: bold;
+                font-size: 26px;
+                padding: 0;
+                border-bottom: 1px solid #404646;
+                span{
+                    display: block;
+                    padding: 5px 0 10px;
+                }
+            }
+            .sub-voicebox{
+                padding: 12px 0 10px;
+                p{
+                    border-bottom: none;
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: normal;
+                    color: #282828;
+                    padding: 15px 0 0;
+                }
+            }
+        }
+    }
+    .photo-mix{
+        padding: 0 0 60px;
+    }
+}
