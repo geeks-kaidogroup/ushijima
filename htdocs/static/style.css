@@ -134,6 +134,26 @@ p {
   font-size: 14px;
 }
 
+.mb5 {
+  margin: 0 0 5px;
+}
+
+.pb15 {
+  padding: 0 0 15px;
+}
+
+.pt7 {
+  padding: 7px 0 0;
+}
+
+.pt10 {
+  padding: 10px 0 0;
+}
+
+.pb35 {
+  padding: 0 0 35px;
+}
+
 /*==============================
 ヘッダー
 ==============================*/
@@ -771,4 +791,134 @@ p {
 .l-blog-detail .l-page-nav li a {
   font-weight: bold;
   color: #004986;
+}
+
+/*牛嶋塗装工業様_10料金*/
+.l-price-guide {
+  padding: 0 0 31px;
+}
+.l-price-guide p {
+  line-height: 26px;
+  letter-spacing: -0.3px;
+  color: #333333;
+}
+
+.l-price-reference {
+  text-align: center;
+  padding: 0 0 40px;
+}
+.l-price-reference li {
+  display: inline;
+  padding: 0 16px 0 0;
+}
+.l-price-reference li:last-child {
+  padding: 0;
+}
+
+.l-estimate {
+  padding: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+.l-estimate ul {
+  text-align: center;
+}
+.l-estimate ul.pic-list1 {
+  padding: 18px 0 15px 0;
+}
+.l-estimate ul.pic-list1 li {
+  display: inline-block;
+  margin: 0 70px 0 0;
+  width: 255px;
+}
+.l-estimate ul.pic-list1 li:last-child {
+  margin: 0;
+}
+.l-estimate ul.pic-list1 li span {
+  display: block;
+  text-align: left;
+  padding: 10px 0 0;
+}
+.l-estimate ul.pic-list2 {
+  padding: 60px 0 35px;
+}
+.l-estimate ul.pic-list2 li {
+  width: 370px;
+  margin: 0 30px 0 0;
+  display: inline-table;
+}
+.l-estimate ul.pic-list2 li:last-child {
+  margin: 0;
+}
+.l-estimate ul.pic-list2 li span {
+  display: block;
+  text-align: left;
+}
+.l-estimate ul.pic-list2 li span.ttl {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 0 0;
+}
+.l-estimate ul.pic-list3 {
+  padding: 35px 0 143px;
+}
+.l-estimate ul.pic-list3 li {
+  display: inline-table;
+  width: 255px;
+  margin: 0 50px 0 0;
+}
+.l-estimate ul.pic-list3 li:last-child {
+  margin: 0;
+}
+
+.l-estimate-form {
+  padding: 0 0 70px;
+}
+.l-estimate-form .message {
+  text-align: center;
+  padding: 0 0 15px;
+}
+.l-estimate-form .notice {
+  text-align: right;
+  padding: 0 0 7px;
+}
+.l-estimate-form span.red {
+  color: #9c0001;
+  font-weight: bold;
+}
+.l-estimate-form span.wanted-date {
+  font-weight: bold;
+  padding: 0 12px 0 0;
+  color: #333333;
+}
+.l-estimate-form th, .l-estimate-form td {
+  border: 1px solid #7d7d7d;
+  padding: 15px 0 15px 15px;
+}
+.l-estimate-form th {
+  background: #d2d2d2;
+  width: 135px;
+  font-weight: bold;
+  font-size: 14px;
+  vertical-align: top;
+}
+.l-estimate-form td {
+  width: 530px;
+}
+.l-estimate-form input.text1 {
+  width: 300px;
+}
+.l-estimate-form input.text2 {
+  width: 400px;
+}
+.l-estimate-form input.text3 {
+  width: 220px;
+}
+.l-estimate-form .text4 {
+  width: 480px;
+  height: 120px;
+}
+.l-estimate-form .estimate-btn {
+  text-align: center;
+  padding: 23px 0 0;
 }
