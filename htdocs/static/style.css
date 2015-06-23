@@ -57,10 +57,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* General */
-.float-list, .wrap, .l-contents, .infobox, .l-cast, .flowbox, .l-voice-detail .voicebox, .l-media-list .mediabox, .l-media-list .mediabox:last-child, .cf {
+.float-list, .wrap, .l-contents, .infobox, .l-cast, .flowbox, .l-voice-detail .voicebox, .l-media-list .mediabox, .l-media-list .mediabox:last-child, .blogbox, .cf {
   *zoom: 1;
 }
-.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .flowbox:after, .l-voice-detail .voicebox:after, .l-media-list .mediabox:after, .l-media-list .mediabox:last-child:after, .cf:after {
+.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .flowbox:after, .l-voice-detail .voicebox:after, .l-media-list .mediabox:after, .l-media-list .mediabox:last-child:after, .blogbox:after, .cf:after {
   content: "";
   display: block;
   clear: both;
@@ -689,4 +689,45 @@ p {
 }
 .warranty-contents dd:last-child {
   padding: 15px 0 90px 100px;
+}
+
+/*牛嶋塗装工業様_09専門家コラム一覧**/
+.blogbox {
+  padding: 0 0 35px;
+}
+.blogbox h3 {
+  background: #000;
+  color: #fff;
+  padding: 7px 0 7px 20px;
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.blogbox .blog-thumb {
+  float: left;
+  width: 140px;
+  padding: 0 20px 0 0;
+}
+.blogbox .blog-text {
+  width: 620px;
+  float: right;
+}
+.blogbox .blog-text .date {
+  border-bottom: 2px solid #b5b5b5;
+  margin: 0 0 10px;
+  padding: 0 0 8px;
+}
+.blogbox .blog-text .read-more {
+  text-align: right;
+  padding: 5px 0 0;
+}
+.blogbox .blog-text .read-more a {
+  color: #004986;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pagination-center {
+  text-align: center;
+  padding: 26px 0 100px;
 }
