@@ -585,3 +585,41 @@ h4{
         padding: 0 0 32px;
     }
 }
+
+/*牛嶋塗装工業様_07メディア掲載*/
+.l-media-list{
+    .media-list-text{
+        padding: 0 0 60px;
+        color: #434343;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+    .mediabox{
+        @extend %extend-cf;
+        padding: 0 0 40px;
+        p{
+            line-height: 22px;
+            color: #434343;
+            font: {
+                size:14px;
+            }
+        }
+        .mediabox-thumb{
+            width: 345px;
+            float: left;
+        }
+        .mediabox-text{
+            float: left;
+            width: 410px;
+            padding: 0 0 0 20px;
+        }
+        &:last-child{
+            @extend %extend-cf;
+            padding: 0 0 70px;
+        }
+        .media-title{
+            padding: 20px 0 0;
+        }
+    }
+}

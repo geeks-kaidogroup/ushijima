@@ -57,10 +57,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* General */
-.float-list, .wrap, .l-contents, .infobox, .l-cast, .flowbox, .l-voice-detail .voicebox, .cf {
+.float-list, .wrap, .l-contents, .infobox, .l-cast, .flowbox, .l-voice-detail .voicebox, .l-media-list .mediabox, .l-media-list .mediabox:last-child, .cf {
   *zoom: 1;
 }
-.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .flowbox:after, .l-voice-detail .voicebox:after, .cf:after {
+.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .flowbox:after, .l-voice-detail .voicebox:after, .l-media-list .mediabox:after, .l-media-list .mediabox:last-child:after, .cf:after {
   content: "";
   display: block;
   clear: both;
@@ -623,4 +623,36 @@ h4 {
 }
 .l-works-detail .before-text {
   padding: 0 0 32px;
+}
+
+/*牛嶋塗装工業様_07メディア掲載*/
+.l-media-list .media-list-text {
+  padding: 0 0 60px;
+  color: #434343;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.l-media-list .mediabox {
+  padding: 0 0 40px;
+}
+.l-media-list .mediabox p {
+  line-height: 22px;
+  color: #434343;
+  font-size: 14px;
+}
+.l-media-list .mediabox .mediabox-thumb {
+  width: 345px;
+  float: left;
+}
+.l-media-list .mediabox .mediabox-text {
+  float: left;
+  width: 410px;
+  padding: 0 0 0 20px;
+}
+.l-media-list .mediabox:last-child {
+  padding: 0 0 70px;
+}
+.l-media-list .mediabox .media-title {
+  padding: 20px 0 0;
 }
