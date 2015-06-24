@@ -892,3 +892,58 @@ p{
     }
 
 }
+
+////////////////////////////////////
+/*牛嶋塗装工業様_11会社概要理念代表挨拶*/
+///////////////////////////////////
+.l-greeting{
+    padding: 0 0 40px;
+    .headline{
+        display: block;
+        padding: 0 0 20px;
+    }
+    .greeting-thumb{
+        float: right;
+        padding: 0 0 23px 33px;
+    }
+    p{
+        line-height: 20px;
+    }
+}
+.l-rinen{
+    padding: 0 0 60px;
+    line-height: 22px;
+    ul{
+        text-align: center;
+        @extend %extend-cf;
+        padding: 0 0 20px;
+        li{
+            float: left;
+            &:last-child{
+                float: right;
+            }
+        }
+    }
+}
+.l-company-info{
+    padding: 0 0 100px;
+    dt, dd{
+        float: left;
+        border: 1px solid #a6a6a6;
+        border-bottom: none;
+        padding: 15px 0 15px 14px;
+        &.last{
+            border-bottom: 1px solid #a6a6a6;
+        }
+    }
+    dt{
+        width: 130px;
+        background: #dedede;
+        border-right: none;
+        font-weight: bold;
+    }
+    dd{
+        width: 616px;
+        border-left: none;
+    }
+}

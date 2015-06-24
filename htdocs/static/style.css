@@ -57,10 +57,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* General */
-.float-list, .wrap, .l-contents, .infobox, .l-cast, .flowbox, .l-voice-detail .voicebox, .l-media-list .mediabox, .l-media-list .mediabox:last-child, .blogbox, .l-blog-detail .l-page-nav, .cf {
+.float-list, .wrap, .l-contents, .infobox, .l-cast, .flowbox, .l-voice-detail .voicebox, .l-media-list .mediabox, .l-media-list .mediabox:last-child, .blogbox, .l-blog-detail .l-page-nav, .l-rinen ul, .cf {
   *zoom: 1;
 }
-.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .flowbox:after, .l-voice-detail .voicebox:after, .l-media-list .mediabox:after, .l-media-list .mediabox:last-child:after, .blogbox:after, .l-blog-detail .l-page-nav:after, .cf:after {
+.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .flowbox:after, .l-voice-detail .voicebox:after, .l-media-list .mediabox:after, .l-media-list .mediabox:last-child:after, .blogbox:after, .l-blog-detail .l-page-nav:after, .l-rinen ul:after, .cf:after {
   content: "";
   display: block;
   clear: both;
@@ -921,4 +921,58 @@ p {
 .l-estimate-form .estimate-btn {
   text-align: center;
   padding: 23px 0 0;
+}
+
+/*牛嶋塗装工業様_11会社概要理念代表挨拶*/
+.l-greeting {
+  padding: 0 0 40px;
+}
+.l-greeting .headline {
+  display: block;
+  padding: 0 0 20px;
+}
+.l-greeting .greeting-thumb {
+  float: right;
+  padding: 0 0 23px 33px;
+}
+.l-greeting p {
+  line-height: 20px;
+}
+
+.l-rinen {
+  padding: 0 0 60px;
+  line-height: 22px;
+}
+.l-rinen ul {
+  text-align: center;
+  padding: 0 0 20px;
+}
+.l-rinen ul li {
+  float: left;
+}
+.l-rinen ul li:last-child {
+  float: right;
+}
+
+.l-company-info {
+  padding: 0 0 100px;
+}
+.l-company-info dt, .l-company-info dd {
+  float: left;
+  border: 1px solid #a6a6a6;
+  border-bottom: none;
+  padding: 15px 0 15px 14px;
+}
+.l-company-info dt.last, .l-company-info dd.last {
+  border-bottom: 1px solid #a6a6a6;
+}
+.l-company-info dt {
+  width: 130px;
+  background: #dedede;
+  border-right: none;
+  font-weight: bold;
+}
+.l-company-info dd {
+  width: 616px;
+  border-left: none;
 }
