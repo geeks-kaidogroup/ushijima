@@ -1,0 +1,978 @@
+@charset "UTF-8";
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* General */
+.float-list, .wrap, .l-contents, .infobox, .l-cast, .flowbox, .l-voice-detail .voicebox, .l-media-list .mediabox, .l-media-list .mediabox:last-child, .blogbox, .l-blog-detail .l-page-nav, .l-rinen ul, .cf {
+  *zoom: 1;
+}
+.float-list:after, .wrap:after, .l-contents:after, .infobox:after, .l-cast:after, .flowbox:after, .l-voice-detail .voicebox:after, .l-media-list .mediabox:after, .l-media-list .mediabox:last-child:after, .blogbox:after, .l-blog-detail .l-page-nav:after, .l-rinen ul:after, .cf:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.float-list li {
+  float: left;
+}
+
+/* Base */
+body {
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', 'sans-serif';
+}
+
+a {
+  color: #253059;
+  text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+/* Layout */
+/*==============================
+共通要素
+==============================*/
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/*==============================
+タイトルバー
+==============================*/
+.l-titlebar {
+  width: 100%;
+  height: 25px;
+  background: #353535;
+}
+.l-titlebar h1 {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 10px;
+  line-height: 25px;
+  color: #fff;
+}
+
+h2 {
+  padding: 0 0 30px;
+}
+
+h3 {
+  padding: 0 0 15px;
+}
+h3.blog-ttl {
+  background: #000;
+  color: #fff;
+  padding: 7px 0 7px 20px;
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h4 {
+  padding: 0 0 20px;
+}
+
+p {
+  color: #727272;
+  font-size: 14px;
+}
+
+.mb5 {
+  margin: 0 0 5px;
+}
+
+.pb15 {
+  padding: 0 0 15px;
+}
+
+.pt7 {
+  padding: 7px 0 0;
+}
+
+.pt10 {
+  padding: 10px 0 0;
+}
+
+.pb35 {
+  padding: 0 0 35px;
+}
+
+/*==============================
+ヘッダー
+==============================*/
+.l-header {
+  width: 100%;
+  background: url(assets/img/layout/header/header_bg.png) repeat;
+}
+.l-header .header-logo {
+  float: left;
+}
+.l-header .header-btn {
+  float: right;
+}
+.l-header .header-btn .header-list {
+  padding: 25px 0 15px;
+}
+.l-header .header-btn .header-list li {
+  margin: 0 0 0 15px;
+}
+
+/*==============================
+メインビジュアル
+==============================*/
+.l-mv {
+  width: 100%;
+  background: url(assets/img/top/mv_bg.png) repeat;
+  padding: 15px 0;
+}
+.l-mv .mv-main {
+  float: left;
+}
+.l-mv .mv-side {
+  float: right;
+}
+.l-mv .mv-side .mv-side-list li {
+  margin: 0 0 10px 0;
+}
+
+/*==============================
+グローバルナビ
+==============================*/
+.l-navi {
+  width: 100%;
+  height: 45px;
+  background: url(assets/img/layout/navi/navi_bg.png) repeat;
+}
+.l-navi .navi-list {
+  width: 1000px;
+  margin: 0 auto;
+}
+.l-navi .navi-list li {
+  height: 45px;
+}
+
+/*==============================
+コンテンツ
+==============================*/
+.l-contents {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+.l-contents .l-main {
+  float: right;
+  width: 780px;
+}
+.l-contents .l-side {
+  float: left;
+  width: 200px;
+}
+.l-contents .l-breadcrumb {
+  padding: 0 0 15px;
+  color: #333333;
+  font-size: 14px;
+}
+.l-contents .l-breadcrumb a {
+  color: #004986;
+}
+
+/*==============================
+サイドバー
+==============================*/
+.l-side {
+  min-height: 4425px;
+  background: url(assets/img/layout/side/side_bg.png) repeat;
+}
+.l-side img {
+  display: block;
+  line-height: 1;
+}
+.l-side .side-list-top {
+  padding: 0 0 5px;
+  background: #fff;
+  border-bottom: 1px dashed #0d0d0d;
+}
+.l-side .side-list-top li {
+  margin: 0 0 15px;
+}
+.l-side .side-navi-list {
+  padding: 20px 0 10px 0;
+  background: #fff;
+  border-bottom: 1px dashed #0d0d0d;
+}
+.l-side .side-navi-list li {
+  margin: 0 0 10px 0;
+}
+.l-side .side-list-bottom {
+  padding: 20px 0 0 0;
+  background: #fff;
+}
+.l-side .side-list-bottom li {
+  margin: 0 0 15px 0;
+}
+
+/*==============================
+フッター
+==============================*/
+.l-footer {
+  width: 100%;
+  padding: 35px 0;
+  color: #fff;
+  background: url(assets/img/layout/footer/footer_bg.png) repeat;
+}
+.l-footer .l-footer-left {
+  float: left;
+  width: 380px;
+}
+.l-footer .l-footer-left .footer-logo {
+  margin: 0 0 20px 0;
+}
+.l-footer .l-footer-left .footer-address {
+  margin: 0 0 35px 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+.l-footer .l-footer-left .footer-banner {
+  margin: 0 0 20px 0;
+}
+.l-footer .l-footer-left .footer-copyright {
+  font-size: 11px;
+}
+.l-footer .l-footer-right {
+  float: right;
+  width: 620px;
+}
+.l-footer .l-footer-right .footer-navi-box {
+  float: left;
+  padding: 0 30px 0 10px;
+  border-left: 1px solid #b48f92;
+}
+.l-footer .l-footer-right .footer-navi-box .footer-navi-list li {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+.l-footer .l-footer-right .footer-navi-box .footer-navi-list li:before {
+  content: ">";
+  margin: 0 5px 0 0;
+}
+.l-footer .l-footer-right .footer-navi-box .footer-bold-list li {
+  font-weight: bold;
+}
+
+/*==============================
+トップページ
+==============================*/
+.top-headline {
+  margin: 0 0 25px 0;
+}
+
+.l-top-catch {
+  padding: 0 0 45px 0;
+}
+.l-top-catch .top-catch-box p {
+  margin: 0 0 25px 0;
+  font-size: 14px;
+  line-height: 25px;
+}
+.l-top-catch .top-catch-box .top-catch-photo {
+  float: right;
+  display: inline;
+}
+
+.l-top-news {
+  padding: 0 0 80px 0;
+}
+.l-top-news .top-news-list li {
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 2px dotted #808080;
+}
+.l-top-news .top-news-list li:first-child {
+  padding: 0 0 10px 0;
+}
+.l-top-news .top-news-list li .category {
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 4px 12px;
+  margin: 0 0 0 10px;
+  font-size: 12px;
+  color: #fff;
+}
+.l-top-news .top-news-list li .category-blog {
+  background: #81393a;
+}
+.l-top-news .top-news-list li .category-column {
+  background: #30527a;
+}
+.l-top-news .top-news-list li .title {
+  margin: 0 0 0 10px;
+  color: #253059;
+}
+.l-top-news .top-news-list li a {
+  text-decoration: none;
+}
+.l-top-news .top-news-list li a:hover {
+  text-decoration: underline;
+}
+
+.l-top-belief {
+  padding: 0 0 80px 0;
+}
+.l-top-belief img {
+  display: block;
+  line-height: 1;
+}
+
+.l-top-voice, .l-voice {
+  padding: 0 0 80px 0;
+}
+.l-top-voice .voice-list, .l-voice .voice-list {
+  width: 810px;
+}
+.l-top-voice .voice-list li, .l-voice .voice-list li {
+  margin: 0 30px 30px 0;
+  width: 240px;
+}
+.l-top-voice .voice-list li .voice-head, .l-voice .voice-list li .voice-head {
+  padding: 10px 0;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #c7c7c7;
+}
+.l-top-voice .voice-list li .voice-photo img, .l-voice .voice-list li .voice-photo img {
+  display: block;
+  line-height: 1;
+}
+.l-top-voice .voice-list li .voice-detail, .l-voice .voice-list li .voice-detail {
+  padding: 10px;
+  background: #f0f0f0;
+  border-left: 1px solid #c7c7c7;
+  border-right: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+}
+.l-top-voice .voice-list li .voice-detail .text, .l-voice .voice-list li .voice-detail .text {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.l-top-voice .voice-list li .voice-detail .condition, .l-voice .voice-list li .voice-detail .condition {
+  margin: 0 0 5px 0;
+  font-size: 12px;
+}
+.l-top-voice .voice-list li .voice-detail .name, .l-voice .voice-list li .voice-detail .name {
+  font-size: 12px;
+}
+.l-top-voice .top-voice-btn, .l-voice .top-voice-btn {
+  display: table;
+  margin: 0 auto;
+}
+
+.l-top-works, .l-works {
+  padding: 0 0 80px 0;
+}
+.l-top-works .works-list, .l-works .works-list {
+  width: 810px;
+}
+.l-top-works .works-list li, .l-works .works-list li {
+  margin: 0 30px 30px 0;
+}
+.l-top-works .works-list li .works-head, .l-works .works-list li .works-head {
+  padding: 5px 0;
+  text-align: center;
+  font-weight: bold;
+  border: 3px solid #f0f0f0;
+}
+.l-top-works .works-list li .works-photo img, .l-works .works-list li .works-photo img {
+  display: block;
+  line-height: 1;
+}
+.l-top-works .works-list li .works-detail, .l-works .works-list li .works-detail {
+  padding: 10px;
+  background: #f0f0f0;
+  font-size: 14px;
+  line-height: 18px;
+}
+.l-top-works .top-works-btn, .l-works .top-works-btn {
+  display: table;
+  margin: 0 auto;
+}
+
+.l-main-foot {
+  padding: 0 0 65px;
+}
+.l-main-foot .foot-banner {
+  display: table;
+  margin: 0 auto;
+}
+.l-main-foot .foot-list {
+  margin: 0 0 0 20px;
+  padding: 25px 0 60px 0;
+  width: 770px;
+}
+.l-main-foot .foot-list li {
+  margin: 0 30px 0 0;
+}
+
+/*==============================
+牛嶋塗装工業様_02他店との違い
+==============================*/
+.infobox {
+  padding: 0 0 30px;
+  line-height: 22px;
+  font-size: 14px;
+  font-color: #434343;
+}
+.infobox .infobox-thumb {
+  width: 252px;
+  float: left;
+}
+.infobox .infobox-thumb p.caption {
+  padding: 0 0 0 40px;
+}
+.infobox .infobox-text {
+  float: left;
+  width: 527px;
+}
+.infobox:last-child {
+  padding: 0 0 260px;
+}
+
+/*==============================
+牛嶋塗装工業様_03職人紹介
+==============================*/
+.l-cast {
+  padding: 0 0 30px;
+}
+.l-cast:last-child {
+  padding: 0 0 75px;
+}
+.l-cast .cast-info {
+  padding: 15px 0 0;
+}
+.l-cast .cast-info .cast-info-thumb {
+  width: 220px;
+  float: left;
+}
+.l-cast .cast-info .cast-info-thumb li {
+  padding: 0 0 20px;
+}
+.l-cast .cast-info .cast-info-table {
+  float: left;
+  width: 560px;
+  font-size: 18px;
+  color: #333333;
+  line-height: 22px;
+  letter-spacing: -1.3px;
+}
+.l-cast .cast-info .cast-info-table table, .l-cast .cast-info .cast-info-table th, .l-cast .cast-info .cast-info-table td {
+  border: 1px solid #352920;
+}
+.l-cast .cast-info .cast-info-table th {
+  width: 208px;
+  text-align: center;
+  padding: 15px 0;
+}
+.l-cast .cast-info .cast-info-table td {
+  padding: 15px 4px 11px 10px;
+}
+
+/*牛嶋塗装工業様_04施工の流れ*/
+.l-before-contruction .before-contruction-headline {
+  padding: 0 0 15px;
+}
+
+.l-main-flowcontent {
+  padding: 0 0 205px;
+}
+.l-main-flowcontent h3 {
+  padding: 70px 0 30px;
+}
+
+.flowbox {
+  padding: 0 0 18px;
+}
+.flowbox p {
+  line-height: 22px;
+  color: #434343;
+  font-size: 14px;
+}
+.flowbox .flowbox-thumb {
+  width: 345px;
+  float: left;
+}
+.flowbox .flowbox-text {
+  float: left;
+  width: 410px;
+  padding: 0 0 0 20px;
+}
+
+/*牛嶋塗装工業様_05お客様が語る牛嶋_一覧 (voice)*/
+.l-voice, .l-works {
+  padding: 20px 0 95px;
+}
+
+.pagination {
+  text-align: right;
+  padding: 0 0 25px;
+}
+.pagination li {
+  display: inline;
+  padding: 0 0 0 10px;
+}
+.pagination li a {
+  color: #004986;
+}
+.pagination li:last-child a {
+  text-decoration: none;
+}
+
+/*牛嶋塗装工業様_05お客様が語る牛嶋_詳細*/
+.l-voice-detail .headline p {
+  color: #727272;
+  font-size: 14px;
+  padding: 15px 0 0;
+}
+.l-voice-detail .voicebox {
+  padding: 25px 0 35px;
+}
+.l-voice-detail .voicebox .voicebox-thumb {
+  float: left;
+  width: 400px;
+}
+.l-voice-detail .voicebox .voicebox-text {
+  float: left;
+  width: 380px;
+}
+.l-voice-detail .voicebox .voicebox-text p {
+  font-weight: bold;
+  font-size: 26px;
+  padding: 0;
+  color: #727272;
+  border-bottom: 1px solid #404646;
+}
+.l-voice-detail .voicebox .voicebox-text p span {
+  display: block;
+  padding: 5px 0 10px;
+}
+.l-voice-detail .voicebox .voicebox-text .sub-voicebox {
+  padding: 12px 0 10px;
+}
+.l-voice-detail .voicebox .voicebox-text .sub-voicebox p {
+  border-bottom: none;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #282828;
+  padding: 15px 0 0;
+}
+.l-voice-detail .photo-mix {
+  padding: 0 0 60px;
+}
+
+/*牛嶋塗装工業様_06ご近所の施工宅_詳細*/
+.l-works-detail {
+  padding: 0 0 245px;
+}
+.l-works-detail dt {
+  padding: 16px 0 5px;
+}
+.l-works-detail dt:first-child {
+  padding: 10px 0 5px;
+}
+.l-works-detail dd {
+  border-bottom: 1px solid #7f7f7f;
+  padding: 0 0 5px;
+  font-size: 15px;
+}
+.l-works-detail dd:nth-child(-n+8) {
+  margin: 0 79px 0 0;
+}
+.l-works-detail .headline {
+  padding: 15px 0 0;
+}
+.l-works-detail .before-thumb {
+  float: left;
+  width: 430px;
+  padding: 0 10px 0 0;
+  background: #fff;
+}
+.l-works-detail .before-text {
+  padding: 0 0 32px;
+}
+
+/*牛嶋塗装工業様_07メディア掲載*/
+.l-media-list .media-list-text {
+  padding: 0 0 60px;
+  color: #434343;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.l-media-list .mediabox {
+  padding: 0 0 40px;
+}
+.l-media-list .mediabox p {
+  line-height: 22px;
+  color: #434343;
+  font-size: 14px;
+}
+.l-media-list .mediabox .mediabox-thumb {
+  width: 345px;
+  float: left;
+}
+.l-media-list .mediabox .mediabox-text {
+  float: left;
+  width: 410px;
+  padding: 0 0 0 20px;
+}
+.l-media-list .mediabox:last-child {
+  padding: 0 0 70px;
+}
+.l-media-list .mediabox .media-title {
+  padding: 20px 0 0;
+}
+
+/*牛嶋塗装工業様_08牛嶋塗装工業の保証*/
+.l-warrantybox {
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  padding: 0 0 35px;
+}
+.l-warrantybox .warrantybox-text {
+  width: 535px;
+  float: left;
+}
+.l-warrantybox .warrantybox-thumb {
+  float: right;
+}
+
+.warranty-contents {
+  line-height: 20px;
+  font-size: 14px;
+  color: #434343;
+}
+.warranty-contents dt {
+  padding: 0 0 0 23px;
+}
+.warranty-contents dd {
+  padding: 15px 0 38px 100px;
+}
+.warranty-contents dd:last-child {
+  padding: 15px 0 90px 100px;
+}
+
+/*牛嶋塗装工業様_09専門家コラム一覧**/
+.blogbox {
+  padding: 0 0 35px;
+}
+.blogbox .blog-thumb {
+  float: left;
+  width: 140px;
+  padding: 0 20px 0 0;
+}
+.blogbox .blog-text {
+  width: 620px;
+  float: right;
+  line-height: 20px;
+}
+.blogbox .blog-text .date {
+  border-bottom: 2px solid #b5b5b5;
+  margin: 0 0 7px;
+  padding: 0 0 3px;
+}
+.blogbox .blog-text .read-more {
+  text-align: right;
+  padding: 5px 0 0;
+}
+.blogbox .blog-text .read-more a {
+  color: #004986;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pagination-center {
+  text-align: center;
+  padding: 26px 0 100px;
+}
+
+/*牛嶋塗装工業様_09専門家コラム個別記事*/
+.l-blog-detail .date {
+  border-bottom: 2px solid #b5b5b5;
+  margin: 0 0 7px;
+  padding: 0 0 10px;
+  font-weight: bold;
+  color: #333333;
+  font-size: 18px;
+}
+.l-blog-detail .blog-detail-box {
+  padding: 8px 0 0;
+  line-height: 26px;
+}
+.l-blog-detail .blog-detail-box .detail-box-text {
+  width: 520px;
+  padding: 0 20px 0 0;
+  float: left;
+}
+.l-blog-detail .blog-detail-box .detail-box-thumb {
+  float: right;
+}
+.l-blog-detail .l-page-nav {
+  padding: 55px 0 390px;
+  text-align: center;
+}
+.l-blog-detail .l-page-nav li {
+  display: inline-block;
+  padding: 0 85px 0 0;
+}
+.l-blog-detail .l-page-nav li:first-child {
+  color: #626262;
+}
+.l-blog-detail .l-page-nav li:last-child {
+  padding: 0;
+}
+.l-blog-detail .l-page-nav li a {
+  font-weight: bold;
+  color: #004986;
+}
+
+/*牛嶋塗装工業様_10料金*/
+.l-price-guide {
+  padding: 0 0 31px;
+}
+.l-price-guide p {
+  line-height: 26px;
+  letter-spacing: -0.3px;
+  color: #333333;
+}
+
+.l-price-reference {
+  text-align: center;
+  padding: 0 0 40px;
+}
+.l-price-reference li {
+  display: inline;
+  padding: 0 16px 0 0;
+}
+.l-price-reference li:last-child {
+  padding: 0;
+}
+
+.l-estimate {
+  padding: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+.l-estimate ul {
+  text-align: center;
+}
+.l-estimate ul.pic-list1 {
+  padding: 18px 0 15px 0;
+}
+.l-estimate ul.pic-list1 li {
+  display: inline-block;
+  margin: 0 70px 0 0;
+  width: 255px;
+}
+.l-estimate ul.pic-list1 li:last-child {
+  margin: 0;
+}
+.l-estimate ul.pic-list1 li span {
+  display: block;
+  text-align: left;
+  padding: 10px 0 0;
+}
+.l-estimate ul.pic-list2 {
+  padding: 60px 0 35px;
+}
+.l-estimate ul.pic-list2 li {
+  width: 370px;
+  margin: 0 30px 0 0;
+  display: inline-table;
+}
+.l-estimate ul.pic-list2 li:last-child {
+  margin: 0;
+}
+.l-estimate ul.pic-list2 li span {
+  display: block;
+  text-align: left;
+}
+.l-estimate ul.pic-list2 li span.ttl {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 0 0;
+}
+.l-estimate ul.pic-list3 {
+  padding: 35px 0 143px;
+}
+.l-estimate ul.pic-list3 li {
+  display: inline-table;
+  width: 255px;
+  margin: 0 50px 0 0;
+}
+.l-estimate ul.pic-list3 li:last-child {
+  margin: 0;
+}
+
+.l-estimate-form {
+  padding: 0 0 70px;
+}
+.l-estimate-form .message {
+  text-align: center;
+  padding: 0 0 15px;
+}
+.l-estimate-form .notice {
+  text-align: right;
+  padding: 0 0 7px;
+}
+.l-estimate-form span.red {
+  color: #9c0001;
+  font-weight: bold;
+}
+.l-estimate-form span.wanted-date {
+  font-weight: bold;
+  padding: 0 12px 0 0;
+  color: #333333;
+}
+.l-estimate-form th, .l-estimate-form td {
+  border: 1px solid #7d7d7d;
+  padding: 15px 0 15px 15px;
+}
+.l-estimate-form th {
+  background: #d2d2d2;
+  width: 135px;
+  font-weight: bold;
+  font-size: 14px;
+  vertical-align: top;
+}
+.l-estimate-form td {
+  width: 530px;
+}
+.l-estimate-form input.text1 {
+  width: 300px;
+}
+.l-estimate-form input.text2 {
+  width: 400px;
+}
+.l-estimate-form input.text3 {
+  width: 220px;
+}
+.l-estimate-form .text4 {
+  width: 480px;
+  height: 120px;
+}
+.l-estimate-form .estimate-btn {
+  text-align: center;
+  padding: 23px 0 0;
+}
+
+/*牛嶋塗装工業様_11会社概要理念代表挨拶*/
+.l-greeting {
+  padding: 0 0 40px;
+}
+.l-greeting .headline {
+  display: block;
+  padding: 0 0 20px;
+}
+.l-greeting .greeting-thumb {
+  float: right;
+  padding: 0 0 23px 33px;
+}
+.l-greeting p {
+  line-height: 20px;
+}
+
+.l-rinen {
+  padding: 0 0 60px;
+  line-height: 22px;
+}
+.l-rinen ul {
+  text-align: center;
+  padding: 0 0 20px;
+}
+.l-rinen ul li {
+  float: left;
+}
+.l-rinen ul li:last-child {
+  float: right;
+}
+
+.l-company-info {
+  padding: 0 0 100px;
+}
+.l-company-info dt, .l-company-info dd {
+  float: left;
+  border: 1px solid #a6a6a6;
+  border-bottom: none;
+  padding: 15px 0 15px 14px;
+}
+.l-company-info dt.last, .l-company-info dd.last {
+  border-bottom: 1px solid #a6a6a6;
+}
+.l-company-info dt {
+  width: 130px;
+  background: #dedede;
+  border-right: none;
+  font-weight: bold;
+}
+.l-company-info dd {
+  width: 616px;
+  border-left: none;
+}
