@@ -17,32 +17,32 @@
 			<div class="l-footer-right">
 				<div class="footer-navi-box">
 					<ul class="footer-navi-list footer-bold-list">
-						<li>トップページ</li>
-						<li>外壁塗装相談室</li>
-						<li>施工事例</li>
-						<li>お客様の声</li>
-						<li>会社概要</li>
+						<li><a href="<?php echo home_url() ?>">トップページ</a></li>
+						<li><a href="<?php echo home_url('//') ?>">外壁塗装相談室</a></li>
+						<li><a href="<?php echo home_url('/work/') ?>">施工事例</a></li>
+						<li><a href="<?php echo home_url('/voice/') ?>">お客様の声</a></li>
+						<li><a href="<?php echo home_url('/company/') ?>">会社概要</a></li>
 					</ul>
 				</div>
 				<div class="footer-navi-box">
 					<ul class="footer-navi-list">
-						<li>業界唯一　牛嶋の強み</li>
-						<li>牛嶋の施工</li>
-						<li>牛嶋の職人</li>
-						<li>牛嶋の足場</li>
-						<li>牛嶋の塗料</li>
-						<li>牛嶋の保証</li>
+						<li><a href="<?php echo home_url('/different/') ?>">業界唯一　牛嶋の強み</a></li>
+						<li><a href="<?php echo home_url('/flow/') ?>">牛嶋の施工</a></li>
+						<li><a href="<?php echo home_url('/introduce/') ?>">牛嶋の職人</a></li>
+						<li><a href="<?php echo home_url('//') ?>">牛嶋の足場</a></li>
+						<li><a href="<?php echo home_url('//') ?>">牛嶋の塗料</a></li>
+						<li><a href="<?php echo home_url('/warranty/') ?>">牛嶋の保証</a></li>
 					</ul>
 				</div>
 				<div class="footer-navi-box">
 					<ul class="footer-navi-list">
-						<li>お客様が語る牛嶋</li>
-						<li>ご近所の施工宅</li>
-						<li>マスコミ取材</li>
-						<li>料金・ローン・お見積もり</li>
-						<li>人材採用（職人）</li>
-						<li>人材採用（大卒・幹部候補）</li>
-						<li>プライバシーポリシー</li>
+						<li><a href="<?php echo home_url('/voice/') ?>">お客様が語る牛嶋</a></li>
+						<li><a href="<?php echo home_url('/work/') ?>">ご近所の施工宅</a></li>
+						<li><a href="<?php echo home_url('/media/') ?>">マスコミ取材</a></li>
+						<li><a href="<?php echo home_url('/price/') ?>">料金・ローン・お見積もり</a></li>
+						<li><a href="<?php echo home_url('//') ?>">人材採用（職人）</a></li>
+						<li><a href="<?php echo home_url('//') ?>">人材採用（大卒・幹部候補）</a></li>
+						<li><a href="<?php echo home_url('//') ?>">プライバシーポリシー</a></li>
 					</ul>
 				</div>
 			</div>

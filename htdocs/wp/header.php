@@ -22,7 +22,7 @@
 			</div>
 			<div class="header-btn">
 				<ul class="header-list float-list">
-					<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/header/header_form.png" width="207" height="83" alt="お問い合わせのフォームはこちら"></li>
+					<li><a href="<?php echo home_url('/price/') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/header/header_form.png" width="207" height="83" alt="お問い合わせのフォームはこちら"></a></li>
 					<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/header/header_tel.png" width="285" height="83" alt="TEL:0120-085-456"></li>
 				</ul>
 			</div>
@@ -47,12 +47,12 @@
 
 	<nav class="l-navi">
 		<ul class="navi-list float-list">
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_01.png" width="153" height="45" alt="トップページ"></li>
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_02.png" width="134" height="45" alt="住宅塗装相談室"></li>
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_03.png" width="143" height="45" alt="牛嶋の強み"></li>
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_04.png" width="142" height="45" alt="牛嶋の施工"></li>
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_05.png" width="143" height="45" alt="牛嶋の保証"></li>
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_06.png" width="142" height="45" alt="お客様が語る牛嶋"></li>
-			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_07.png" width="143" height="45" alt="ご近所の施工宅"></li>
+			<li><a href="<?php echo home_url() ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_01.png" width="153" height="45" alt="トップページ"></a></li>
+			<li><a href="<?php echo home_url('//') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_02.png" width="134" height="45" alt="住宅塗装相談室"></a></li>
+			<li><a href="<?php echo home_url('/different/') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_03.png" width="143" height="45" alt="牛嶋の強み"></a></li>
+			<li><a href="<?php echo home_url('/flow/') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_04.png" width="142" height="45" alt="牛嶋の施工"></a></li>
+			<li><a href="<?php echo home_url('/warranty/') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_05.png" width="143" height="45" alt="牛嶋の保証"></a></li>
+			<li><a href="<?php echo home_url('/voice/') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_06.png" width="142" height="45" alt="お客様が語る牛嶋"></a></li>
+			<li><a href="<?php echo home_url('/work/') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/layout/navi/navi_07.png" width="143" height="45" alt="ご近所の施工宅"></a></li>
 		</ul>
 	</nav><!-- /.l-navi -->
